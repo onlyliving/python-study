@@ -1,3 +1,8 @@
+# 파일 실행 가이드
+## 참고사항 
+1. 저장소에 올린 파일에서 `virtualenv` 개발환경이 생성될 때 만들어진 파일을 제외하였음.
+
+
 # Flask를 이용하여 정적페이지 만들기
 > Flask 프레임워크를 이해하기.
 >> 관련 링크 : https://medium.com/@feedbotstar/python-flask-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-41c7c6e97d08
@@ -37,18 +42,14 @@
 ## Flask 실행
 
 #### 1. 실행방법 1
-- 파일이름 `app.py` 로 설정
-- 해당파일이 있는 root에서 `flask run` 실행
-
-#### 2. 실행방법 2
 - FLASK_APP 환경 변수 이용
 - {실행파일}.py 파일이 있는 root에서 터미널 실행
 ```
-> export FLASK_APP=hello.py
+> export FLASK_APP={실행파일}.py
 > flask run
 ```
 
-#### 3. 실행방법 3
+#### 2. 실행방법 2
 ```python
 # 실행되는 .py 파일 하단에 추가 
 if __name__ == '__main__':
